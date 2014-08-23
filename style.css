@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	background-image: url(grid.png);
+	overflow-x: hidden;
+}
+
+p {
+	font-size: 11px;
+}
+
+h5 {
+	font-size: 17px;
+	margin: 5px 0px -5px 0px;
+	color: #F88B00;
+}
+
+input, select {
+	outline: none;
+	padding: 5px 0px 5px 8px;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	background-color: #FAFAFA;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+
+input:focus, select:active {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	border: 1px solid rgba(81, 203, 238, 1);
+	background-color: #fff;
+}
+
+button {
+	width: 100px;
+	margin-left: 65px;
+	padding: 7px 0 8px 0;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #96ca6d;
+	color: #fff;
+	background-color: #7fbf4d;
+	background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+	background-image: linear-gradient(top, #7fbf4d, #63a62f);
+	border: 1px solid #63a62f;
+}
+
+button:hover {
+	background-color: #76b347;
+	background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+	background-image: linear-gradient(top, #76b347, #5e9e2e);
+	cursor: pointer;
+}
+
+button:active {
+	border: 1px solid #5b992b;
+	border-bottom: 1px solid #538c27;
+	box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+}
+
+.left-pane {
+	height: 100%;
+	width: 300px;
+	margin-left: -290px;
+	float: left;
+	-webkit-transition: margin .5s ease-in-out;
+	-moz-transition: margin .5s ease-in-out;
+	-o-transition: margin .5s ease-in-out;
+	-ms-transition: margin .5s ease-in-out;
+	transition: margin .5s ease-in-out;
+}
+
+.left-pane:hover {
+	margin: 0;
+}
+
+.left-tab {
+	height: 100%;
+	width: 10px;
+	float: right;
+	background-color: rgba(129, 129, 129, 0.45);
+}
+
+.input-wrapper {
+	height: 100%;
+	width: 290px;
+	float: left;
+	background-color: white;
+}
+
+.input {
+	height: 98%;
+	width: 270px;
+	overflow: auto;
+}
+
+.grid {
+	height: 100px;
+	width: 270px;
+	margin-bottom: 30px;
+}
+
+.row {
+	margin: 10px;
+}
+
+.field {
+	width: 175px;
+}
+
+.warning {
+	height: 62px;
+	width: 237px;
+	padding: 5px 15.5px;
+	border: 1px solid #FFB800;
+	border-radius: 5px;
+	-webkit-transition: box-shadow 0.5s ease-in-out;
+	-moz-transition: box-shadow 0.5s ease-in-out;
+	-ms-transition: box-shadow 0.5s ease-in-out;
+	-o-transition: box-shadow 0.5s ease-in-out;
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+.warning:hover {
+	box-shadow: 0px 0px 5px 0px #FFB800;
+}
+
+/* From NV-D3 CSS Files */
+
+svg {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+.nvd3 .nv-point-paths path {
+	stroke:#aaa;
+	stroke-opacity:0;
+	fill:#eee;
+	fill-opacity:0;
+}
+
+.nvd3 .nv-groups path.nv-line {
+	fill:none;
+	stroke-width:1.5px;
+	vector-effect: non-scaling-stroke;
+}
+
+.nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+	fill-opacity:0;
+	stroke-opacity:0;
+}

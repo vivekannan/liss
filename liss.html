@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title></title>
+		<script src="d3.min.js" type="text/javascript"></script>
+		<script src="nv.d3.min.js" type="text/javascript"></script>
+		<link href="style.css" type="text/css" rel="stylesheet" media="all" />
+	</head>
+	<body>
+		<div class="left-pane">
+			<div class="input-wrapper">
+				<div class="input">
+					<div class="grid">
+						<div class="row">Signal 1</div>
+						<div class="row">
+							<input type="text" class="field" placeholder="Frequency">
+							<select>
+								<option value="0">Hz</option>
+								<option value="3">KHz</option>
+								<option value="6">MHz</option>
+								<option value="9">GHz</option>
+							</select>
+						</div>
+						<div class="row">
+							<input type="text" class="field" placeholder="Phase &deg;">
+						</div>
+					</div>
+					<div class="grid">
+						<div class="row">Signal 2</div>
+						<div class="row">
+							<input type="text" class="field" placeholder="Frequency">
+							<select>
+								<option value="0">Hz</option>
+								<option value="3">KHz</option>
+								<option value="6">MHz</option>
+								<option value="9">GHz</option>
+							</select>
+						</div>
+						<div class="row">
+							<input type="text" class="field" placeholder="Phase &deg;">
+						</div>
+					</div>
+					<div class="row">
+						<button onClick="pattern()">Plot</button>
+					</div>
+					<div class="warning">
+						<h5>Warning!</h5>
+						<p>
+							Erratic inputs will result in a highly CPU intensive plot.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="left-tab"></div>
+		</div>
+		<svg preserveAspectRatio='none'></svg>
+		<script src="liss.js" type="text/javascript"></script>
+	</body>
+</html>
